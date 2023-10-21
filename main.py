@@ -26,10 +26,19 @@ def ClickONPlayKiller(x=333, y=162):
     SetWindowForeground()
     pyautogui.click(x, y)
     
+def ClickONContiniueDC(x=1355, y=655):
+    SetWindowForeground()
+    pyautogui.click(x, y)
+    
+def ClickEnter():
+    pyautogui.press("enter");
+    
 def ProceedGame():
+    ClickEnter();
     ClickONPlayKiller();
     ClickONPlay();
     ClickONContinue();
+    ClickONContiniueDC();
 
 def holdKey(key= "w", duration = 0.45):
     pyautogui.keyDown(key)
@@ -65,6 +74,4 @@ if __name__ == "__main__":
         if keyboard.is_pressed('esc'):
             break;
         
-
-
 
