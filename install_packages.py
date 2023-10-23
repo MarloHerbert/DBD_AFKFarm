@@ -5,6 +5,7 @@ import subprocess
 packages_to_install = [
     'pyautogui',
     'keyboard',
+    'pywin32'
 ]
 
 def install_packages(packages):
